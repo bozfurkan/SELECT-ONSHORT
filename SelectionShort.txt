@@ -1,0 +1,76 @@
+1) sayılar=[22,27,16,2,18,6]
+ilk değeri ele alarak sırasıyla diğer sayılara bakar 
+  .22<27 evet diğerine geç
+  .22<16 hayır yer değiştir
+  .16<2  hayır yer değiştir
+  .2<18  evet diğerine geç
+  .2<6   evet 
+     en küçük 2 oldu, 22 ile yer değiştir.
+sayılar=[2,27,16,22,18,6]
+ 2 değere geçer
+   .27<16 hayır yer değiştir.
+   .16<22 evet diğerine geç
+   .16<18 evet diğerine geç
+   .16<6  hayır yer değiştir.
+      2.değer için en küçük 6 oldu,27 ile yer değiş
+sayılar=[2,6,16,22,18,27]
+ 3. değere  geçer
+   .16<22 evet diğerine geç
+   .16<18 evet diğerine geç
+   .16<27 evet 
+     3. değer 16 oldu, yer değişikliğine gerek yok
+sayılar=[2,6,16,22,18,27]
+ 4. değere geçer
+   .22<18 hayır yer değiştir
+   .18<27 evet
+      4. değer 18 oldu, 22 ile yer değiş
+sayılar=[2,6,16,18,22,27]
+   5.değere geç
+     .22<27 evet 
+        5.değer 22 oldu, yer değişikliğine gerek kalmadı
+sayılar=[2,6,16,18,22,27] döngü array uzunluğyla sınırladırıldığından işlem bitmiştir.
+
+2) işlem n+n-1+n-2+n-3 şeklinde gittiğinden işlem n'e bağlıdır
+O(n) dir
+
+3)18 sayısının ortanca sayı olduğu için average case girer
+
+4)sayılar=[7,3,5,8,2,9,4,15,6];
+    1. değere bak
+      .7<3 hayır yer değiştir.
+      .3<5 evet diğerine geç
+      .3<8 evet diğerine geç
+      .3<2 hayır yer değiştir.
+      .2<9 evet diğerine geç
+      .2<4 evet diğerine geç
+      .2<15 evet diğerine geç
+      .2<6 evet diğerine geç
+         ilk değer 2 oldu, 7 iler yer değiştir.
+sayılar=[2,3,5,8,7,9,4,15,6];
+    2.değere bak
+      .3<5 evet diğerine geç
+      .3<8 evet diğerine geç
+      .3<7 evet diğerine geç
+      .3<9 evet diğerine geç
+      .3<4 evet diğerine geç
+      .3<15 evet diğerine geç
+      .3<6 evet 
+         2.değer 3 oldu yer değiştirme olmadı
+sayılar=[2,3,5,8,7,9,4,15,6];
+    3.değere bak
+      .5<8 evet diğerine geç
+      .5<7 evet diğerine geç
+      .5<9 evet diğerine geç
+      .5<4 hayır yer değiş
+      .4<15 evet diğerine geç
+      .4<6 evet diğerine geç
+         3. değer 4 oldu,5 ile yer değiş
+sayılar=[2,3,4,8,7,9,5,15,6];
+     4.değere bak
+       .8<7 hayır yer değiş
+       .7<9 evet diğerine geç
+       .7<5 hayır yer değiş
+       .5<15 evet diğerine geç
+       .5<6 evet
+          4.değer 5 oldu,8 ile yer değiş.
+sayılar=[2,3,4,5,7,9,8,15,6]
